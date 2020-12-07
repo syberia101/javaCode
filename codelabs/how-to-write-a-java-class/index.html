@@ -1,0 +1,156 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>How to Write your first Java class</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="how-to-write-a-java-class"
+                  title="How to Write your first Java class"
+                  environment="web"
+                  feedback-link="">
+    
+      <google-codelab-step label="Overview" duration="1">
+        <h2 class="checklist" is-upgraded>What You&#39;ll Learn</h2>
+<ul>
+<li>What is a class/object</li>
+<li>how to write an hello world in Object Oriented Programming (OOP) way</li>
+<li>How to compile your java file</li>
+<li>how to run your java file</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="What is OOP programming" duration="1">
+        <ul>
+<li>What is a Class of Object</li>
+<li>In OOP everything is a class (of object)</li>
+<li>A Class is a blueprint of an object that define its properties and behaviour</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Name of the class" duration="0">
+        <p>The name of the Class need to be the same than the name of the file.</p>
+<pre><code language="language-java" class="language-java">public class Message {
+    ....
+}
+</code></pre>
+<p>The name of the file need to be <strong>Message.java</strong></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Java Convention for writing classes, methods and Variables" duration="2">
+        <p>Java is case sensitive.</p>
+<p>Java convention for the naming and writing of the class, method, variable.</p>
+<table>
+<tr><td colspan="1" rowspan="1"><p>Type</p>
+</td><td colspan="1" rowspan="1"><p>Rule for naming</p>
+</td><td colspan="1" rowspan="1"><p>Example</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Class</p>
+</td><td colspan="1" rowspan="1"><p>Upper case. It should be name</p>
+</td><td colspan="1" rowspan="1"><p>AnalyseCase.java</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Method</p>
+</td><td colspan="1" rowspan="1"><p>lower case. It should be starting or being a verb</p>
+</td><td colspan="1" rowspan="1"><p>getMessage()</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>Variable</p>
+</td><td colspan="1" rowspan="1"><p>lower case. It should be short but meaningful</p>
+</td><td colspan="1" rowspan="1"><p>message = &#34;this is a message&#34;</p>
+</td></tr>
+</table>
+<p><a href="https://www.oracle.com/java/technologies/javase/codeconventions-namingconventions.html" target="_blank">link for some naming conventions</a></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="First Class" duration="2">
+        <p>First create a folder name First_exercise_java</p>
+<p>In this folder, create a file <strong>Message.java</strong></p>
+<p>Copy the following code and save the file.</p>
+<pre><code language="language-java" class="language-java">public class Message {
+
+	public String getMessage() {
+	return &#34;Hello world&#34;
+	}
+}
+</code></pre>
+<p>You create your first class in Java. This class has one function, and this function return the String &#34;Hello World&#34;.</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Using the first class" duration="3">
+        <p>In the folder First_exercise_java create a file <strong>FirstExercise.java</strong></p>
+<p>Copy the following code and save the file.</p>
+<pre><code language="language-java" class="language-java">public class FirstExercise {
+
+	public static void main (String args[]) {
+	
+	//creation of an instance of the class message with no parameter in the signature of the constructor
+      Message firstMessage = new Message();
+      
+	//call the method printMessage on the instance of the object Message
+	//and store the returned String in a String variable
+      String message = firstMessage.getMessage();
+      
+	//print the String
+      System.out.println(message);
+    }
+
+}
+</code></pre>
+<p>In this second class FirstExercise.java, you are creating an instance of the class message, using the default constructor of the class Message.java.</p>
+<p>You are calling the method on the instance of the object Message -&gt; firstMessage</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Compile and run your first application Java" duration="2">
+        <p>Go to your Gitbash/Terminal/Shell, etc.</p>
+<p>Go in the directory that contains the two previous file: First_exercise_java</p>
+<p>Make sure that both files are in it and type the following:</p>
+<pre><code language="language-shell" class="language-shell">javac FirstExercise.java
+</code></pre>
+<p>If you don&#39;t have errors that appear in your Shell you just have compiled your first java application</p>
+<p>Now you want to run it, type the following:</p>
+<pre><code language="language-shell" class="language-shell">java FirstExercise
+</code></pre>
+<p>You should see this in your Shell</p>
+<p class="image-container"><img alt="First Message screenshot" src="img/fe25e1f568b96be0.jpg"></p>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>

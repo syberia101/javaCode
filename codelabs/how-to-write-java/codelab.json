@@ -1,0 +1,24 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2020-12-07T13:31:32+01:00",
+  "id": "how-to-write-java",
+  "duration": 10,
+  "title": "How to Write your first Java class",
+  "authors": "Helene de Ribaupierre",
+  "summary": "All the pages",
+  "source": "allJava.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "java"
+  ],
+  "tags": [
+    "code"
+  ],
+  "url": "how-to-write-java"
+}

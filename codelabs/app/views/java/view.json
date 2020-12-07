@@ -1,0 +1,10 @@
+{
+  "title": "Java code",
+  "description": "Hosting the code Java for the course of Dr. Hélène de Ribaupierre.",
+  "logoUrl": "/java/java.svg",
+  "tags": ["java"],
+  "exclude": [
+    ".*-about$",
+    "^lang-.*"
+  ]
+}
